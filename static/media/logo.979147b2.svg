@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024.0 1024.0">
+
+    <rect x="128.0" y="128.0" rx="128" ry="128" width="512" height="512"
+        style="stroke:#345;stroke-width:64;stroke-opacity:1;fill:none" />
+    <rect x="384.0" y="384.0" rx="128" ry="128" width="512" height="512"
+        style="stroke:#345;stroke-width:64;stroke-opacity:1;fill:none" />
+    
+    <rect x="128.0" y="384.0" rx="128" ry="128" width="512" height="512"
+        style="stroke:#567;stroke-width:64;stroke-opacity:1;fill:none" />
+    <rect x="384.0" y="128.0" rx="128" ry="128" width="512" height="512"
+        style="stroke:#567;stroke-width:64;stroke-opacity:1;fill:none" />
+
+    <rect x="128.0" y="384.0" rx="128" ry="128" width="512" height="512"
+        style="stroke:#80b0FF;stroke-width:32;stroke-opacity:1;fill:none" />
+    <rect x="384.0" y="128.0" rx="128" ry="128" width="512" height="512"
+        style="stroke:#80b0FF;stroke-width:32;stroke-opacity:1;fill:none" />
+
+    <g fill="#def">
+        <circle cx="512.0" cy="512.0" r="42.0"/>
+    </g>
+</svg>
