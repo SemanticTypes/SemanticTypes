@@ -1,1 +1,1 @@
-# sf17.github.io
+# semantictypes.github.io
