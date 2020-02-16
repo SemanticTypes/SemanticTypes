@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- The HTML 4.01 Transitional DOCTYPE declaration-->
+<!-- above set at the top of the file will set     -->
+<!-- the browser's rendering engine into           -->
+<!-- "Quirks Mode". Replacing this declaration     -->
+<!-- with a "Standards Mode" doctype is supported, -->
+<!-- but may lead to some differences in layout.   -->
+
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Hello App Engine</title>
+<script src="js/ES6Polyfill.js"></script>
+<script src="js/util.js"></script>
+
+<script src="js/coextent.js"></script>
+<script src="js/rel/isRelatedThrough.js"></script>
+<script src="js/rel/has.js"></script>
+<script src="js/rel/isA.js"></script>
+<script src="js/rel/canBeA.js"></script>
+
+<script src="js/test.js"></script>
+</head>
+
+<script>
+	function init() {
+		divConsole = document.getElementById('divConsole');
+		test();
+	}
+</script>
+
+<body onload="init();">
+	<div id="divConsole"></div>
+</body>
+</html>

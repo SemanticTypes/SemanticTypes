@@ -1,0 +1,124 @@
+<html>
+<head>
+	<link rel="stylesheet" href="css/font-awesome.css">
+	<style type="text/css">
+	table {
+		background-color: white;
+		border: 1px solid #d0d0d0;
+		font-family: arial;
+	}
+	th {
+		background-color: #f0f0f0;
+		border: 1px solid #e0e0e0;
+	}
+	td {
+		border: 1px solid #f0f0f0;
+	}
+	button {
+		width: 80;
+		height: 40;
+	}
+	</style>
+
+	<script src="js/util.js"></script>
+	
+	<script src="js/rel/isRelatedThrough.js"></script>
+	<script src="js/x10d.js"></script>
+	<script src="js/rel/has.js"></script>
+	<script src="js/rel/isA.js"></script>
+	<script src="js/rel/canBeA.js"></script>
+	<script src="js/entity.js"></script>
+
+<script>
+function execute(btn) {
+	var output = "<div>" + btn.id + ":</div>";
+	var results = x10d.execute(btn.id, x10d);
+	output += "<ul>";
+	for (var r in results) {
+		output += "<li>" + r + "</li>";
+	}
+	output += "</ul>";
+	var resultList = document.getElementById("results");
+	resultList.innerHTML = output;
+}
+function listEntries() {
+	var actions = x10d.execute("listActions");
+	var icons = {
+			"List": "icon-list",
+			"New": "icon-tint",
+			"Add": "icon-plus-sign",
+			"Update": "icon-ok-sign",
+			"Delete": "icon-remove"
+	};
+	var actionGroups = {};
+	var methods = {};
+	var relCount = {};
+	for (var action in actions) {
+		var g = actions[action].group;
+		var t = actions[action].topic;
+		var m = actions[action].type;
+		if (actionGroups[g] == undefined) {
+			actionGroups[g] = {};
+		}
+		if (actionGroups[g][t] == undefined) {
+			actionGroups[g][t] = {};
+		}
+		if (actionGroups[g][t][m] == undefined) {
+			actionGroups[g][t][m] = {};
+		}
+		actionGroups[g][t][m] = actions[action];
+		methods[m] = true;
+		if (relCount[g] == undefined) {
+			relCount[g] = {count: 0};
+		}
+		if (relCount[g][t] == undefined) {
+			relCount[g][t] = true;
+			relCount[g].count++;
+		}
+	}
+	var output = "";
+	for (var ag in actionGroups) {
+		for (var at in actionGroups[ag]) {
+			var rowOutput = "<tr>";
+			var rsc = relCount[ag].count;
+			if (rsc > 0) {
+				rowOutput += "<th rowspan='"+ rsc +"'>" + ag + "</th>";
+			}
+			relCount[ag].count = 0;
+			rowOutput += "<th>" + at + "</th>";
+			var generateHeader = (output == "")? true :false;
+			if (generateHeader) {
+				output += "<tr><th><i>Relation</i></th><th><i>Topic</i>\\<i>Method</i></th>";
+			}
+			for (var m in methods) {
+				if (generateHeader) {
+					output += "<th>" + "<i class=\"" + icons[m] +"\">" + m + "</th>";
+				}
+				rowOutput += "<td>";
+				var action = actionGroups[ag][at][m];
+				if (action != undefined) {
+					//  onClick='execute(this)'
+					rowOutput += "<button id='" + action.id + "'>" + action.label + "</button>";
+				}
+				rowOutput += "</td>";
+			}
+			rowOutput += "</tr>";
+			if (generateHeader) {
+				output += "</tr>";
+			}
+			output += rowOutput;
+		}
+	}
+	output = "<table>" + output + "</table>";
+	var actionList = document.getElementById("actions");
+	actionList.innerHTML = output;
+}
+</script>
+</head>
+<style></style>
+<body onLoad="listEntries();">
+<div id="actions"></div>
+<div id="breadCrumb" style="border-bottom:1px solid gray;margin-top:10px">/root</div>
+<div id="results"></div>
+</body>
+</html>

@@ -1,0 +1,1 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:true});var isSerializablePanel=React.createClass({displayName:"isSerializablePanel",render:function render(){var json=this.props.data.entity.x0("_g_j",4);return React.createElement("div",{className:"_c_bpc"},React.createElement("pre",null,json))}});exports.default=isSerializablePanel;

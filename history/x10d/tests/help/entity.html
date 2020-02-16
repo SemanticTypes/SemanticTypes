@@ -1,0 +1,69 @@
+<div class="x10d_help_intro">
+	<h2>Entity</h2>
+
+	<p>
+		Entity is the most basic form to work with and it's defined by the <i>relationships</i>
+		it supports, and can be constructed by executing <i>actions</i>
+		supported by the entity.
+	</p>
+	<p>
+		The <i>actions</i> become available as a result of enhancing the
+		entity by way of adding a <i>relationship</i> to it. The <i>actions</i>
+		can be listed by calling <i>listActions</i> on the entity.
+	</p>
+	<p>
+		The core, out of the box <b>x10d</b> entity is built by bootstrapping
+		a <u>special</u> <i>relationship</i> (<b>isRelatedThrough</b>) which
+		adds <i>relationships</i> support through three <i>actions</i>: "<b>[add,
+			remove, list]Relation</b>".
+	</p>
+</div>
+<div class="x10d_help_introNote">
+	<p>Note that each relation being added can add any number of
+		actions. An action can be added by multiple relations, in which case
+		executing the action will be dispatched to all interested relations.
+		??? Some relations are hierarchical, some not.</p>
+</div>
+
+<div class="x10d_help_oobRel">
+	<h2>Relationships</h2>
+	<p>
+		<i>Relationships</i> are mainly used to organize the way entities
+		connect to each other and they achieve that by defining a list of
+		references to other entities.
+	</p>
+	<p>The "has" relation for example - is responsible for defining and
+		managing the structure and content of an entity. It does so by
+		referring to its components (commonly referred as fields) as part of a
+		list of entity references. It is important to note that the reference
+		is to an entity, which is a first class citizen, public entity in the
+		system, not a private detail of a "parent" of sorts.</p>
+	<p>
+		Out of the box, in addition to the <b>isRelatedThrough</b> special
+		relationship that provides the core relationship support(the special
+		aspect of the <b>isRelatedThrough</b> is due to its self referring
+		nature, requiring it to be bootstrapped), there are 4 hierarchical
+		relations provided for entity:
+	</p>
+	<ul>
+		<li>isA</li>
+		<li>canBeA</li>
+		<li>has</li>
+		<li>isHadBy</li>
+	</ul>
+	<p>canBeA and isHadBy provide back references for the other 2.</p>
+</div>
+
+<div>
+	<p>Entities are not persistent, cannot be updated once they're
+		saved(they're sealed). Other higher forms are. This is to simplify the
+		work required to maintain the updates from the inherited entities
+		point of view. However other higher level forms(document) will support
+		edits/updates, through the use of versioning, among other things.</p>
+
+	<p>The "isA" relation is responsible for managing inheritance. Keep
+		in mind that this is done for the purpose of interactive building of
+		entities so the creation of an entity is a multistep process(new,
+		edit, save,..).
+	<p>
+</div>

@@ -1,0 +1,41 @@
+<style>
+.my-form2 {
+	padding: 5px 0 10px 0;
+	line-height: 1;
+}
+
+.entity-name2 {
+	transition: all linear 0.5s;
+	background: transparent;
+	border-color: default;
+	line-height: 1;
+}
+
+.entity-name2.ng-invalid {
+	background: #ffd0d0;
+	border-color: red;
+	line-height: 1;
+}
+</style>
+
+<div>
+	<form name="myForm" novalidate>
+		<div class="my-form2">
+			<input type="text" name="entityName" required
+				placeholder="{{dynamicPopover.placeholder}}" class="entity-name2"
+				data-ng-model="dynamicPopover.name" data-ng-trim="true"> <span
+				class="error" data-ng-show="myForm.entityName.$error.required">Required!</span>
+		</div>
+		<button class="btn btn-sm btn-primary"
+			data-ng-click="create(); $event.stopPropagation();"
+			data-ng-disabled="myForm.$invalid">
+			<span class="glyphicon glyphicon-ok-sign"></span> Create
+		</button>
+		<button class="btn btn-sm btn-warning"
+			data-ng-click="close(); $event.stopPropagation();">
+			<span class="glyphicon glyphicon-remove-sign"></span> Cancel
+		</button>
+	</form>
+
+</div>
+

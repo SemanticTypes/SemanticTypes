@@ -1,1 +1,824 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="shortcut icon" href="/app/favicon.ico"><link rel="stylesheet" href="/app/fontawesome5/css/fontawesome-pro-solid.css"><link rel="stylesheet" href="/app/fontawesome5/css/fontawesome-pro-core.css"><title>React App</title><link href="/app/static/css/main.653a89c8.css" rel="stylesheet"></head><body><div id="root"></div><script type="text/javascript" src="/app/static/js/main.6162113d.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <link rel="image_src" type="image/jpeg" href="images/logo.979147b2.svg">
+
+    <!-- Site Properities -->
+    <title>Semantic Types</title>
+
+    <meta name="description" content="Semantic empowers designers and developers by creating a shared vocabulary for UI.">
+    <meta name="keywords" content="html5, ui, semantic, meta, types, library, framework, javascript">
+
+    <link rel="stylesheet" type="text/css" class="ui" href="./css/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/docs.css">
+    <link rel="stylesheet" type="text/css" href="./css/rtl.css">
+
+    <link rel="stylesheet" type="text/css" href="./css/home.css">
+    </style>
+
+    <body id="example" class="index pushable js-focus-visible dimmable" ontouchstart="">
+
+        <div class="ui vertical inverted sidebar menu left" id="toc" style="">
+            <div class="item">
+                <a class="ui logo icon image" href="https://www.semantictypes.com/">
+                    <img class="semantic-types-logo" src="images/logo.979147b2.svg">
+                </a>
+                <a href="https://semantictypes.com/docs"><b>Docs</b></a>
+            </div>
+            <a class="item" href="notes.html">
+                <b>Getting Started</b>
+            </a>
+            <a class="item" href="roadmap.html#latest">
+                <b>New in 0.7</b>
+            </a>
+            <div class="item">
+                <div class="header">Introduction</div>
+                <div class="menu">
+
+                    <a class="item" href="https://semantic-ui.com/introduction/integrations.html">Integrations </a>
+
+                    <a class="item" href="https://semantic-ui.com/introduction/build-tools.html">Build Tools </a>
+
+                    <a class="item" href="https://semantic-ui.com/introduction/advanced-usage.html">Recipes </a>
+
+                    <a class="item" href="https://semantic-ui.com/introduction/glossary.html">Glossary </a>
+
+                </div>
+            </div>
+            <div class="item">
+                <div class="header">Usage</div>
+                <div class="menu">
+
+                    <a class="item" href="https://semantic-ui.com/usage/theming.html">Theming </a>
+
+                    <a class="item" href="https://semantic-ui.com/usage/layout.html">Layouts </a>
+
+                </div>
+            </div>
+            <div class="item">
+                <div class=" header">Globals</div>
+                <div class="menu">
+
+                    <a class="item" href="https://semantic-ui.com/globals/reset.html">Reset </a>
+
+                    <a class="item" href="https://semantic-ui.com/globals/site.html">Site </a>
+
+                </div>
+            </div>
+            <div class="item">
+                <div class=" header">Elements</div>
+                <div class="menu">
+
+                    <a class="item" href="https://semantic-ui.com/elements/button.html">Button </a>
+
+                    <a class="item" href="https://semantic-ui.com/elements/container.html">Container </a>
+
+                    <a class="item" href="https://semantic-ui.com/elements/divider.html">Divider </a>
+
+                    <a class="item" href="https://semantic-ui.com/elements/flag.html">Flag </a>
+
+                    <a class="item" href="https://semantic-ui.com/elements/header.html">Header </a>
+
+                    <a class="item" href="https://semantic-ui.com/elements/icon.html">Icon </a>
+
+                    <a class="item" href="https://semantic-ui.com/elements/image.html">Image </a>
+
+                    <a class="item" href="https://semantic-ui.com/elements/input.html">Input </a>
+
+                    <a class="item" href="https://semantic-ui.com/elements/label.html">Label </a>
+
+                    <a class="item" href="https://semantic-ui.com/elements/list.html">List </a>
+
+                    <a class="item" href="https://semantic-ui.com/elements/loader.html">Loader </a>
+
+                    <a class="item" href="https://semantic-ui.com/elements/placeholder.html">Placeholder </a>
+
+                    <a class="item" href="https://semantic-ui.com/elements/rail.html">Rail </a>
+
+                    <a class="item" href="https://semantic-ui.com/elements/reveal.html">Reveal </a>
+
+                    <a class="item" href="https://semantic-ui.com/elements/segment.html">Segment </a>
+
+                    <a class="item" href="https://semantic-ui.com/elements/step.html">Step </a>
+
+                </div>
+            </div>
+            <div class="item">
+                <div class=" header">Collections</div>
+                <div class="menu">
+
+                    <a class="item" href="https://semantic-ui.com/collections/breadcrumb.html">Breadcrumb </a>
+
+                    <a class="item" href="https://semantic-ui.com/collections/form.html">Form </a>
+
+                    <a class="item" href="https://semantic-ui.com/collections/grid.html">Grid </a>
+
+                    <a class="item" href="https://semantic-ui.com/collections/menu.html">Menu </a>
+
+                    <a class="item" href="https://semantic-ui.com/collections/message.html">Message </a>
+
+                    <a class="item" href="https://semantic-ui.com/collections/table.html">Table </a>
+
+                </div>
+            </div>
+            <div class="item">
+                <div class=" header">Views</div>
+                <div class="menu">
+
+                    <a class="item" href="https://semantic-ui.com/views/advertisement.html">Advertisement </a>
+
+                    <a class="item" href="https://semantic-ui.com/views/card.html">Card </a>
+
+                    <a class="item" href="https://semantic-ui.com/views/comment.html">Comment </a>
+
+                    <a class="item" href="https://semantic-ui.com/views/feed.html">Feed </a>
+
+                    <a class="item" href="https://semantic-ui.com/views/item.html">Item </a>
+
+                    <a class="item" href="https://semantic-ui.com/views/statistic.html">Statistic </a>
+
+                </div>
+            </div>
+            <div class="item">
+                <div class=" header">Modules</div>
+                <div class="menu">
+
+                    <a class="item" href="https://semantic-ui.com/modules/accordion.html">Accordion </a>
+
+                    <a class="item" href="https://semantic-ui.com/modules/checkbox.html">Checkbox </a>
+
+                    <a class="item" href="https://semantic-ui.com/modules/dimmer.html">Dimmer </a>
+
+                    <a class="item" href="https://semantic-ui.com/modules/dropdown.html">Dropdown </a>
+
+                    <a class="item" href="https://semantic-ui.com/modules/embed.html">Embed </a>
+
+                    <a class="item" href="https://semantic-ui.com/modules/modal.html">Modal </a>
+
+                    <a class="item" href="https://semantic-ui.com/modules/popup.html">Popup </a>
+
+                    <a class="item" href="https://semantic-ui.com/modules/progress.html">Progress </a>
+
+                    <a class="item" href="https://semantic-ui.com/modules/rating.html">Rating </a>
+
+                    <a class="item" href="https://semantic-ui.com/modules/search.html">Search </a>
+
+                    <a class="item" href="https://semantic-ui.com/modules/shape.html">Shape </a>
+
+                    <a class="item" href="https://semantic-ui.com/modules/sidebar.html">Sidebar </a>
+
+                    <a class="item" href="https://semantic-ui.com/modules/sticky.html">Sticky </a>
+
+                    <a class="item" href="https://semantic-ui.com/modules/tab.html">Tab </a>
+
+                    <a class="item" href="https://semantic-ui.com/modules/transition.html">Transition </a>
+
+                </div>
+            </div>
+            <div class="item">
+                <div class=" header">Behaviors</div>
+                <div class="menu">
+
+                    <a class="item" href="https://semantic-ui.com/behaviors/api.html">API </a>
+
+                    <a class="item" href="https://semantic-ui.com/behaviors/form.html">Form Validation </a>
+
+                    <a class="item" href="https://semantic-ui.com/behaviors/visibility.html">Visibility </a>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="ui black big launch right attached fixed button" style="display:none">
+            <i class="content icon"></i>
+            <span class="text">Menu</span>
+        </div>
+
+        <div class="pusher">
+            <div class="full height">
+                <div class="following bar">
+                    <div class="ui container">
+                        <div class="ui large secondary network menu inverted">
+                            <div class="item">
+                                <div class="ui logo shape">
+                                    <div class="sides">
+                                        <div class="active ui side">
+                                            <img class="semantic-types-logo" src="images/logo.979147b2.svg">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="view-ui item" style="display:none"><i class="sidebar icon"></i> Menu </a>
+                            <div class="right menu inverted">
+                                <div class="item">
+
+                                </div>
+                                <div class="ui language floating dropdown link item" id="languages" style="display:none">
+                                    <i class="world icon"></i>
+                                    <div class="text">English </div>
+                                    <div class="menu left transition hidden">
+                                        <div class="header">Search Languages</div>
+                                        <div class="ui icon search input">
+                                            <i class="search icon"></i>
+                                            <input type="text" placeholder="Search languages..." class="">
+                                        </div>
+                                        <div class="scrolling menu">
+                                            <div class="item active selected" data-percent="100" data-value="en" data-english="English"><span class="description">English</span> English </div>
+                                            <div class="item" data-percent="0" data-value="ro" data-english="Romanian"><span class="description">Românește</span> Romanian </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="masthead segment bg5" style="">
+                    <div class="ui container">
+                        <div class="introduction">
+                            <a class="ui black version label" href="https://github.com/Semantic-Org/Semantic-UI/blob/master/RELEASE-NOTES.md">
+        0.7.0
+      </a>
+                            <h1 class="ui inverted header">
+        <span class="library">Semantic Types </span>
+        <span class="tagline">The meat, the bones. A bit of fat.</span>
+        <div class="tagline">Some carbs. No sugar. Enjoy! </div>
+      </h1>
+                            <div class="ui hidden divider"></div>
+
+                            <a href="notes.html" class="ui huge inverted download button">Get Started </a>
+                            <a href="roadmap.html#latest" class="ui huge inverted basic button">New in 0.7</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui vertical stripe intro segment">
+                    <div class="ui stackable very relaxed center aligned grid container">
+                        <div class="row">
+                            <div class="twelve wide column">
+                                <img class="ui fluid image" src="./images/devices.png">
+                                <h1 class="ui header">Distributed Information Management Simplified</h1>
+                                <p><i>Semantic Types</i> is an experimental platform seeking to understand, and then - if possible - simplify some of the ways in which you describe, interact with, and organize your information in a digital system.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stackable very relaxed ui grid container">
+                        <div class="row">
+                            <div class="seven wide column">
+                                <h2 class="ui header">Basic goals</h2>
+                                <p><i>Semantic Types</i> aims to give its users the ability to:</p>
+                                <div class="ui bulleted large list">
+                                    <div class="item">Define sets of new comprehensive categories, or <i>semantic types</i>, to provide a consistent categorization of all concepts represented in their systems.</div>
+                                    <div class="item">Define sets of useful and important new relationships, or <i>semantic relations</i>, that exist between semantic types.</div>
+                                    <div class="item">Define sets of meaningful new events, to drive the adoption of processes and applications.</div>
+                                    <div class="item">Use any of the existing types, relations, and events - built in the system or shared by other users - together with their own as well as share their newly created sets with other users to create a rich ecosystem.</div>
+                                    <div class="item">Decouple the relation's implementation from the relation's semantics, and allow different roles to contribute to each stage, with developers focused on implementating relation's logic and giving others the option of composing their systems in the desired configuration.</div>
+
+                                </div>
+                                <p></p>
+                            </div>
+                            <div class="nine wide column">
+                                <div class="ui existing segment">
+                                    <h3 class="ui header">Intuitive Concepts</h3>
+                                    <p>Types, relations and events form the building blocks of the <i>Semantic Types</i> system.</p>
+                                    <div class="ui three column grid">
+                                        <div class="column"><img src="./images/type.png" class="ui circular image"></div>
+                                        <div class="column"><img src="./images/relation.png" class="ui circular image"></div>
+                                        <div class="column"><img src="./images/event.png" class="ui circular image"></div>
+                                    </div>
+                                    <p>
+Types are used to describe concepts and physical objects - both natural and artificial. 
+Types are one of the fundamental unit of the system, but there is no clear definition as to what really constitutes a "type", 
+and it is rather the combination of types and relation that allow us to define a type.
+                                    </p>
+                                    <p>
+Relations are used to describe the associations between Types and fall into two major categories:
+<i>is-a</i> (supertype-subtype) and <i>has-a</i> (used for aggregation, composition and containment).
+                                    </p>
+                                    <p>
+Events cover activities - human or machine - and behaviors, as well as natural phenomenons and human initiated processes.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui divider"></div>
+                        <div class="row">
+                            <div class="eight wide column">
+                                <h2 class="ui header">The Data</h2>
+                                
+                                <p>
+For simplicity we'll refer to <i>data</i> as carying no semantics other than what can be infered from it. 
+All other information that help categorizing it, giving hints to its behaviour, or instructions for 
+how to process or present it, we will refer to as <i>metadata</i>.
+                                </p><img src="./images/iceberg_metadata.jpg" class="ui right floated image" style="margin-right: -54px !important;">
+                                <div class="ui justified container" style="font-size: 1.14285714em;margin-left: 0em!important;">
+                                <p>
+Historically the <i>data</i> was usually handled by the code, which controlled metadata and most often hardcoded it in its logic.
+One of the first attempts at providing the users the ability to feed <i>metadata</i> together with the <i>data</i> came from the 
+markup languages. However, one of the challenges of markup languages and hypertext in particular is with how it mixes together 
+presentation <i>metadata</i> and <i>data</i> in the form of content. More recent efforts to create web applications added 
+Javascript into the mix, and in the process it went back from the simple use of text to requiring programming.
+                                </p>
+                                </div>
+                                <p>
+Our goal here is to provide a distributed platform where the user can describe the <i>data</i> and the intended behavior of the 
+system in a declarative fashion with a clear separation of concerns described in machine language based on an evolving language 
+where developers get to collaborate in real time to provide the needed building blocks (relationships and events).
+                                </p>
+                            </div>
+                            <div class="eight wide column">
+                                <div class="ui existing segment">
+                                <h3 class="ui header">A Brief History of the Semantic Web</h3>
+                                <p>
+One of the first attempts at providing the users the ability to feed <i>metadata</i> together with the <i>data</i> came from the 
+publishing world, to supporting the increasingly complex demands of printing and it involved the use of specific control codes 
+and macros inserted in the <i>data</i>.
+                                </p>
+                                <p>
+The late 1960s <a href="http://www.sgmlsource.com/history/sgmlhist.htm">saw</a> the introduction of generic descriptive tags 
+and efforts to separate the information content of documents from their format, which evolved throughout the next decade into SGML.
+                                </p>
+                                <p>
+Then in 1989 the Hypertext was <a href="https://www.w3.org/History/1989/proposal.html">introduced</a> as a 
+human-readable information linked together in an unconstrained way.
+Over the last three decades the hypertext has evolved to become the backbone of the global information system - the WWW - 
+sharing the collective knowledge of individuals with each other through the Internet.
+                                </p>
+                                <p>
+While the Hypertext was instrumental in defining the distributed network the web relies on, one its early advantages which 
+brought its fast adoption - that it links information together in an unconstrained way, and the simple mix of 
+presentation metadata and data - also meant a lack of structure.
+								</p>
+                                <p>
+Recent efforts in the 2010s saw the introduction of the Semantic Web.
+The Semantic Web seeks to add a layer of semantics on top of the current WWW, so
+rather than discovering data through text searches, the Semantic Web creates and exposes large ontologies of concepts. 
+The Resource Description Framework (RDF) provides the basic capability to define classes, subclasses, and properties of objects.
+								</p>
+                                <p>
+Additionally, data mining and machine learning gives developers technology to provide order on a constantly 
+evolving network of knowledge. 
+Defining ontologies that are static and incapable of evolving in real time would be very limiting for web-based systems,
+so the search is on for new technologies that provide the ability to deal with the dynamic environment of the Internet.
+                                </p>
+                                <p>
+From the vision of
+<a href="https://en.wikipedia.org/wiki/Memex" target="_blank">memex</a> to 
+<a href="https://en.wikipedia.org/wiki/Project_Xanadu" target="_blank">Xanadu</a>, from the implementations of 
+<a href="https://en.wikipedia.org/wiki/NLS_(computer_system)" target="_blank">NLS</a> to 
+<a href="https://en.wikipedia.org/wiki/Videotex" target="_blank">Videotex</a>, and from 
+<a href="https://html.spec.whatwg.org/multipage/" target="_blank">HTML</a> to 
+<a href="https://www.w3.org/RDF/" target="_blank">RDF</a> 
+there is a diverse and long history of ideas and projects helping make data more open and accessible.
+                                </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui divider"></div>
+                        <div class="row" style="display:none">
+                            <div class="seven wide column">
+                                <h2 class="ui header">Intuitive Concepts</h2>
+                                <p><i>Semantic Types</i> uses simple phrases called behaviors that trigger functionality.</p>
+                                <p>Any arbitrary decision in a component is included as a setting that developers can modify.</p>
+                            </div>
+                            <div class="nine wide column">
+                                <a class="ui black pointing below ignored label">Run Code</a>
+                                <div class="ui existing segment"><pre><code class="code javascript">$(<span class="string">'select.dropdown'</span>)
+  .dropdown(<span class="string">'set selected'</span>, [<span class="string">'meteor'</span>, <span class="string">'ember'</span>])
+;</code></pre></div>
+                                <div class="ui existing segment"><pre><code class="code xml"><span class="tag">&lt;<span class="title">select</span> <span class="attribute">name</span>=<span class="value">"skills"</span> <span class="attribute">multiple</span>=<span class="value">""</span> <span class="attribute">class</span>=<span class="value">"ui fluid dropdown"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">option</span> <span class="attribute">value</span>=<span class="value">""</span>&gt;</span>Skills<span class="tag">&lt;/<span class="title">option</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">option</span> <span class="attribute">value</span>=<span class="value">"angular"</span>&gt;</span>Angular<span class="tag">&lt;/<span class="title">option</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">option</span> <span class="attribute">value</span>=<span class="value">"css"</span>&gt;</span>CSS<span class="tag">&lt;/<span class="title">option</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">option</span> <span class="attribute">value</span>=<span class="value">"ember"</span>&gt;</span>Ember<span class="tag">&lt;/<span class="title">option</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">option</span> <span class="attribute">value</span>=<span class="value">"html"</span>&gt;</span>HTML<span class="tag">&lt;/<span class="title">option</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">option</span> <span class="attribute">value</span>=<span class="value">"javascript"</span>&gt;</span>Javascript<span class="tag">&lt;/<span class="title">option</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">option</span> <span class="attribute">value</span>=<span class="value">"meteor"</span>&gt;</span>Meteor<span class="tag">&lt;/<span class="title">option</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">option</span> <span class="attribute">value</span>=<span class="value">"node"</span>&gt;</span>NodeJS<span class="tag">&lt;/<span class="title">option</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">select</span>&gt;</span></code></pre></div>
+                                
+                            </div>
+                        </div>
+                        <div class="ui divider" style="display:none"></div>
+                        <div class="row" style="display:none">
+                            <div class="seven wide column">
+                                <h2 class="ui header">Simplified Debugging</h2>
+                                <p>
+                                applying the lessons to how we write code
+distribute
+properly capture context / metadata for the code rather than trying to infer from text
+                                
+                                Instead of writing monolithic components, and mashin together custom requirements with highly generic code
+                                Developers are focused on writing tools and cleanly separated code
+                                Nit against yagni
+                                
+                                Performance logging lets you track down bottlenecks without digging through stack traces.</p>
+                                <div class="ui info message">Don't have access to development tools right now? Check out <a href="https://t.co/GOUQx8iCyG">this short clip</a>. </div>
+                            </div>
+                            <div class="nine wide column">
+                                <a class="ui black pointing below ignored label">Run Code</a>
+                                <div class="ui existing segment"><pre><code class="code javascript">$(<span class="string">'.sequenced.images .image'</span>)
+  .transition({
+    debug     : <span class="literal">true</span>,
+    animation : <span class="string">'jiggle'</span>,
+    duration  : <span class="number">500</span>,
+    interval  : <span class="number">200</span>
+  })
+;</code></pre></div>
+                                <div class="ui small sequenced images">
+                                    <img src="" class="ui circular image">
+                                    <img src="" class="ui circular image">
+                                    <img src="" class="ui circular image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui email alternate stripe vertical segment" style="display:none">
+                    <div class="ui center aligned grid container">
+                        <div class="column">
+                            <h3 class="ui header"><i>Semantic Types</i> is growing fast. Want to see just how much? Sign up and we'll let you know </h3>
+                            <form class="ui form" method="post" action="https://semantic-ui.clients.ubivox.com/handlers/post/">
+                                <input type="hidden" name="action" value="subscribe">
+                                <input type="hidden" name="lists" value="29450">
+                                <div class="field">
+                                    <div class="ui huge input">
+                                        <input type="text" name="email_address" data-validate="email" placeholder="E-mail">
+                                    </div>
+                                    <button type="submit" value="Subscribe" class="ui huge secondary submit button">Sign-up </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui stripe theming vertical segment" style="display:none">
+                    <div class="ui stackable very relaxed two column grid container">
+                        <div class="center aligned column">
+                            <h1 class="ui icon header"><img src="./images/theming.png" class="ui icon image"> Unbelievable expresiveness </h1>
+                            <p><i>Semantic Types</i> comes equipped with an intuitive inheritance system and high level theming variables that let you have complete design freedom.</p>
+                            <p>Develop your product once, then deploy everywhere.</p>
+                            <div class="ui large source button transition visible" style="display: block !important;"><i class="docs code icon"></i> View Source </div>
+                        </div>
+                        <div class="left aligned column">
+                            <div data-type="element" data-element="button" class="ui large floating dropdown theme button">
+                                <span class="text">Google Material</span>
+                                <i class="dropdown icon"></i>
+                                <div class="menu ui transition hidden" tabindex="-1">
+                                    <div data-value="Default" class="item">Semantic UI</div>
+                                    <div data-value="Amazon" class="item">Amazon</div>
+                                    <div data-value="Material" class="item active selected">Google Material</div>
+                                    <div data-value="GitHub" class="item">GitHub</div>
+                                    <div data-value="Bootstrap3" class="item">Bootstrap</div>
+                                    <div data-value="Twitter" class="item">Twitter</div>
+                                    <div class="divider"></div>
+                                    <div data-value="Raised" class="item">Raised</div>
+                                    <div data-value="Chubby" class="item">Chubby</div>
+                                    <div data-value="Classic" class="item">Classic</div>
+                                </div>
+                            </div>
+                            <div class="ui divider"></div>
+                            <div class="ui button">View </div>
+                            <div class="ui primary button"><i class="shop icon"></i> Add to Cart </div>
+                            <div class="ui secondary button"><i class="save icon"></i> Save for Later </div>
+                            <div class="ui labeled icon button"><i class="star icon"></i> Rate </div>
+                            <div class="ui demo buttons">
+                                <div class="ui button">1</div>
+                                <div class="ui button">2</div>
+                                <div class="ui button active">3</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ui two column center aligned relaxed stackable source grid">
+                        <div class="column">
+                            <h3 class="ui header">Variable File</h3>
+                            <div class="ui existing segment"><pre><code class="ui variable code less"><span class="comment">/*******************************
+            Button
+*******************************/</span>
+
+<span class="comment">/*-------------------
+       Element
+--------------------*/</span>
+
+<span class="variable">@googleFontName :</span> <span class="string">'Roboto'</span>;
+<span class="variable">@pageFont       :</span> <span class="string">'Roboto'</span>, Arial, sans-serif;
+
+<span class="variable">@medium:</span> <span class="number">13px</span>;
+
+<span class="variable">@verticalPadding   :</span> <span class="number">0.8em</span>;
+<span class="variable">@horizontalPadding :</span> <span class="number">0.8em</span>;
+<span class="variable">@borderRadius      :</span> <span class="variable">@relative3px</span>;
+<span class="variable">@color             :</span> <span class="hexcolor">#222222</span>;
+<span class="variable">@fontWeight        :</span> normal;
+<span class="variable">@textTransform     :</span> none;
+
+<span class="variable">@backgroundColor      :</span> <span class="variable">@white</span>;
+<span class="variable">@backgroundImage      :</span> <span class="function">linear-gradient</span>(transparent, <span class="function">rgba</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.02</span>));
+
+<span class="variable">@solidBorderColor:</span> <span class="hexcolor">#DDDDDD</span>;
+
+<span class="variable">@borderBoxShadowColor:</span> <span class="variable">@solidBorderColor</span>;
+<span class="variable">@borderBoxShadow:</span> <span class="number">0px</span> <span class="number">0px</span> <span class="number">0px</span> <span class="number">1px</span> <span class="variable">@solidBorderColor</span> inset;
+<span class="variable">@shadowBoxShadow:</span> <span class="number">0px</span> <span class="number">0px</span> <span class="number">0px</span> <span class="number">0px</span> transparent;
+
+<span class="variable">@transition:</span>
+  opacity <span class="number">0.3s</span> <span class="variable">@defaultEasing</span>,
+  background-color <span class="number">0.3s</span> <span class="variable">@defaultEasing</span>,
+  color <span class="number">0.3s</span> <span class="variable">@defaultEasing</span>,
+  box-shadow <span class="number">0.3s</span> <span class="variable">@defaultEasing</span>,
+  background <span class="number">0.3s</span> <span class="variable">@defaultEasing</span>
+;
+<span class="comment">/*-------------------
+        State
+--------------------*/</span>
+
+<span class="variable">@hoverBackgroundColor:</span> <span class="variable">@white</span>;
+<span class="variable">@hoverBoxShadow:</span>
+  <span class="variable">@borderBoxShadow</span>,
+  <span class="number">0px</span> <span class="number">2px</span> <span class="number">3px</span> <span class="number">0px</span> <span class="function">rgba</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.2</span>) !important
+;
+
+<span class="variable">@downBackgroundColor:</span> <span class="variable">@white</span>;
+<span class="variable">@downBackgroundImage:</span> <span class="function">linear-gradient</span>(<span class="function">rgba</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.04</span>), <span class="function">rgba</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.04</span>));
+<span class="variable">@downTextColor:</span> <span class="hexcolor">#222222</span>;
+<span class="variable">@downBoxShadow:</span> <span class="variable">@borderBoxShadow</span>;
+
+<span class="variable">@activeBackgroundColor:</span> <span class="hexcolor">#F0F0F0</span>;
+<span class="variable">@activeBoxShadow:</span> <span class="number">0px</span> <span class="number">0px</span> <span class="number">0px</span> <span class="number">1px</span> <span class="hexcolor">#DDDDDD</span>;
+
+<span class="comment">/*-------------------
+      Variations
+--------------------*/</span>
+
+<span class="comment">/* Basic */</span>
+<span class="variable">@basicBorderSize:</span> <span class="number">0px</span>;
+<span class="variable">@basicBorderRadius:</span> <span class="number">4px</span>;
+<span class="variable">@basicColoredBorderSize:</span> <span class="number">1px</span>;
+<span class="variable">@basicHoverBackground:</span> <span class="variable">@white</span>;
+<span class="variable">@basicHoverBoxShadow:</span> <span class="variable">@hoverBoxShadow</span>;
+<span class="variable">@basicDownBackground:</span> <span class="variable">@white</span>;
+<span class="variable">@basicDownBoxShadow:</span> <span class="variable">@downBoxShadow</span>;
+
+<span class="variable">@basicActiveBackground:</span> <span class="hexcolor">#FFFFFF</span>;
+<span class="variable">@basicActiveBoxShadow:</span> <span class="number">0px</span> <span class="number">0px</span> <span class="number">0px</span> <span class="number">1px</span> <span class="function">rgba</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.2</span>);
+
+<span class="comment">/* Labeled */</span>
+<span class="variable">@labeledIconBackgroundColor:</span> transparent;
+<span class="variable">@labeledIconWidth:</span> <span class="number">2em</span>;
+
+<span class="variable">@labeledLabelBorderOffset:</span> <span class="number">0px</span>;
+
+<span class="comment">/* Colored */</span>
+<span class="variable">@coloredBackgroundImage :</span> <span class="variable">@subtleGradient</span>;
+<span class="variable">@coloredBoxShadow       :</span> <span class="number">0px</span> <span class="number">0px</span> <span class="number">0px</span> <span class="number">1px</span> <span class="function">rgba</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.1</span>) inset;
+
+<span class="comment">/* Primary */</span>
+<span class="variable">@primaryColor       :</span> <span class="hexcolor">#4184F3</span>;
+<span class="variable">@primaryBoxShadow   :</span> <span class="number">0px</span> <span class="number">0px</span> <span class="number">0px</span> <span class="number">1px</span> <span class="hexcolor">#0157E4</span> inset;
+
+<span class="comment">/* Secondary */</span>
+<span class="variable">@secondaryColor           :</span> <span class="hexcolor">#EEEEEE</span>;
+<span class="variable">@secondaryBackgroundImage :</span> <span class="variable">@backgroundImage</span>;
+<span class="variable">@secondaryTextColor       :</span> <span class="variable">@textColor</span>;
+<span class="variable">@secondaryBoxShadow       :</span> <span class="variable">@borderBoxShadow</span>;
+
+<span class="comment">/* Emotive */</span>
+<span class="variable">@positiveColor:</span> <span class="hexcolor">#3D9400</span>;
+<span class="variable">@negativeColor:</span> <span class="hexcolor">#D34836</span>;
+
+<span class="comment">/* Inverted */</span>
+<span class="variable">@invertedBorderSize:</span> <span class="number">1px</span>;
+
+</code></pre></div>
+                        </div>
+                        <div class="column">
+                            <h3 class="ui header">Override File</h3>
+                            <div class="ui existing segment"><pre><code class="ui override code css"><span class="at_rule">@<span class="keyword">import</span> <span class="function">url</span>(https://fonts.googleapis.com/css?family=Roboto)</span>;
+
+<span class="rule"><span class="attribute">.ui.primary.button</span>:<span class="value">hover {
+  box-shadow:
+    <span class="number">0px</span> <span class="number">0px</span> <span class="number">0px</span> <span class="number">1px</span> <span class="function">rgba</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.3</span>) inset,
+    <span class="number">0px</span> <span class="number">2px</span> <span class="number">3px</span> <span class="number">0px</span> <span class="function">rgba</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.35</span>) <span class="important">!important</span>
+  </span></span>;
+}
+
+<span class="rule"><span class="attribute">.ui.secondary.button</span>:<span class="value">hover {
+  box-shadow:
+    <span class="number">0px</span> <span class="number">0px</span> <span class="number">0px</span> <span class="number">1px</span> <span class="function">rgba</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.2</span>) inset,
+    <span class="number">0px</span> <span class="number">2px</span> <span class="number">3px</span> <span class="number">0px</span> <span class="function">rgba</span>(<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">0.3</span>) <span class="important">!important</span>
+  </span></span>;
+}
+</code></pre></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature alternate ui stripe vertical segment" style="display:none">
+                    <div class="ui three column center aligned divided relaxed stackable grid container">
+                        <div class="row">
+                            <div class="column">
+                                <h2 class="ui icon header"><i class="sitemap icon"></i> 300+ Built-in Entities</h2>
+                                <p>Over 150 built-in types, 25+ relations, 100 events provide the basic building blocks for most domains.</p>
+                                <a class="ui large button" href="https://semantic-ui.com/usage/theming.html">Built-in Entities</a>
+                            </div>
+                            <div class="column">
+                                <h2 class="ui icon header"><img class="ui icon image" src="./images/book.png"> 120+ Shared Sets </h2>
+                                <p>Build your system with one stack. Reuse information between multiple projects by choosing types, relations and events from ERP, eCommerce, digital marketing and many other domains.</p>
+                                <div class="ui primary view-ui large button">Browse Sets</div>
+                            </div>
+                            <div class="column">
+                                <h2 class="ui icon header"><i class="users icon"></i> 5000+ Users </h2>
+                                <p><i>Semantic Types</i>' platform is intended to be used in personal projects as well as large scale production environments. </p>
+                                <a href="https://github.com/Semantic-Org/Semantic-UI/issues" class="ui large button">See what our users say</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui stripe vertical segment" style="display:none">
+                    <div class="ui stackable very relaxed grid container">
+                        <div class="fourteen wide center aligned centered column">
+                            <h1 class="ui icon header"><img src="./images/toolbox.png" class="ui icon image"> Unbelievable Breadth </h1>
+                            <p>Definitions aren't limited to just buttons on a page. Semantic's components allow several distinct types of definitions: elements, collections, views, modules and behaviors which cover the gamut of interface design.</p>
+                            <a class="ui large primary button" href="https://semantic-ui.com/usage/layout.html">See Layout Examples <i class="right chevron icon"></i> </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="ui stripe community vertical segment" style="display:none">
+                    <div class="ui two column center aligned divided very relaxed stackable grid container">
+                        <div class="row">
+                            <div class="column">
+                                <h2 class="ui icon header"><img class="ui icon image" src="./images/mobile.png"> Responsively Designed </h2>
+                                <p><i>Semantic Types</i> is designed to make building web products a breeze.</p>
+                                <a class="ui large button" href="https://semantic-ui.com/usage/layout.html">Responsive Examples</a>
+                            </div>
+                            <div class="column">
+                                <h2 class="ui icon header"><img class="ui icon image" src="./images/heart.png"> Partners with Libraries You Love </h2>
+                                <p><i>Semantic Types</i> has integrations with <b>React, Angular, Meteor, Ember</b> and many other frameworks to help organize your product code.</p>
+                                <a class="ui large button" href="https://semantic-ui.com/introduction/integrations.html">See Integrations</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui alternate stripe vertical segment" style="display:none">
+                    <div class="ui stackable center aligned grid container">
+                        <div class="fourteen wide column">
+                            <h1 class="ui icon header"><img class="ui inline icon image" src="./images/rocket.png"> Liberate your Development </h1>
+                            <div class="ui stackable center aligned vertically padded grid">
+                                <div class="eight wide column">
+                                    <h3 class="ui header">Enterprise Ready</h3>
+                                    <p>Build tools, performance logging, support for custom definitions, multiple-levels of inheritance—a developer's dream.</p>
+                                    <a class="ui large right labeled primary icon button" href="start-dev.html"><i class="right chevron icon"></i> Get Started Now </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ui vertical footer segment">
+                <div class="ui center aligned container">
+                    <div class="ui stackable grid">
+                        <div class="three wide column" style="display:none">
+                            <div class="ui warning icon message">
+                                <div class="content">
+                                    <div class="header">Looking for help? </div>
+                                    <ul class="list">
+                                        <li>Use our <a href="https://semantic-ui.com/#">help center</a></li>
+                                        <li>Check our <a href "#"="">FAQ</a></li>
+                                        <li><a class="item" href="https://github.com/Semantic-Org/Semantic-UI/issues" target="_blank">Submit an Issue</a></li>
+                                        <li><a class="item" href="https://gitter.im/Semantic-Org/Semantic-UI" target="_blank">Join our Chat</a></li>
+                                        <li><a class="item" href="http://forums.semantic-ui.com/" target="_blank">User Forums</a></li>
+                                        <li><a class="item" href="http://1.semantic-ui.com/">Docs</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="seven wide right floated column">
+                            <h4 class="ui header">Built with Semantic UI</h4>
+                            <img src="https://semantic-ui.com/images/logo.png" class="ui centered mini image">
+
+                            <div class="ui message"><i class="close icon"></i> This site uses cookies </div>
+                        </div>
+
+                    </div>
+                    <div class="ui section divider"></div>
+                    <img src="images/logo.979147b2.svg" class="ui centered mini image semantic-types-logo">
+                    <div class="ui horizontal small divided link list">
+                        <a class="item" href="http://semantic-ui.mit-license.org/" target="_blank"><small>Copyright &copy; 2020, Semantic Types. All rights reserved.</small></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="ui basic chinese modal">
+            <i class="close icon"></i>
+            <div class="header">Would you like to visit the mirror site?</div>
+            <div class="image content">
+                <div class="middle aligned image">
+                    <i class="question icon"></i>
+                </div>
+                <div class="description">
+                    <p><i>Semantic Types</i> is available at <a href="http://www.semantic-ui.cn/">semantic-ui.cn</a> a mirror site hosted inside China. This should make browsing much faster for those visiting from mainland China. </p>
+                </div>
+            </div>
+            <div class="actions">
+                <div class="ui inverted red cancel button">No Thanks</div>
+                <a href="http://www.semantic-ui.cn/" class="ui inverted green approve button"><i class="mail icon"></i> Yes, take me to the mirror </a>
+            </div>
+        </div>
+
+        <script>
+            (function() {
+                var
+                    eventSupport = ('querySelector' in document && 'addEventListener' in window)
+                jsonSupport = (typeof JSON !== 'undefined'),
+                    jQuery = (eventSupport && jsonSupport) ? './js/jquery.min.js' : './js/jquery.legacy.min.js';
+                document.write('<script src="' + jQuery + '"><\/script>');
+            }());
+        </script>
+        <script src="./js/jquery.min.js"></script>
+
+        <script type="text/javascript">
+            /*
+            window.liveSettings = {
+                api_key: '9ede3015b9f84c1aabc81ab839c55d74',
+                parse_attr: [
+                    'data-title',
+                    'data-content'
+                ],
+                detectlang: false,
+                autocollect: true,
+                ignore_tags: ['i', 'code', 'pre'],
+                parse_attr: ['data-title', 'data-content', 'data-text'],
+                ignore_class: ['code', 'anchor']
+            };
+            */
+        </script>
+        <script type="text/javascript" src="./js/live.js"></script>
+
+        <script src="./js/highlight.min.js"></script>
+        <script src="./js/easing.min.js"></script>
+
+        <script src="./js/semantic.min.js"></script>
+
+        <script src="./js/docs.js"></script>
+        <script src="./js/home.js"></script>
+        <script>
+            window.less = {
+                async: true,
+                environment: 'production',
+                fileAsync: false,
+                onReady: false,
+                useFileCache: true
+            };
+        </script>
+
+        <script src="./js/less.min.js"></script>
+
+        <style class="override">
+            @import url(https://fonts.googleapis.com/css?family=Roboto);
+            .ui.primary.button:hover {
+                box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.3) inset, 0px 2px 3px 0px rgba(0, 0, 0, 0.35) !important;
+            }
+            
+            .ui.secondary.button:hover {
+                box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.2) inset, 0px 2px 3px 0px rgba(0, 0, 0, 0.3) !important;
+            }
+        </style>
+        <div class="ui dimmer modals page transition hidden">
+            <div class="ui basic language modal transition hidden">
+                <i class="close icon"></i>
+                <div class="header">The <span class="name"></span> Translation Needs Your Help</div>
+                <div class="image content">
+                    <div class="middle aligned image">
+                        <i class="world icon"></i>
+                    </div>
+                    <div class="description">
+                        <p>This translation is only <b><span class="complete"></span>%</b> complete!</p>
+                        <div class="ui inverted indicating progress">
+                            <div class="bar" style="width: 0%;"></div>
+                        </div>
+                        <p>We need your help to make Semantic available to people who speak your language.</p>
+                        <p>Our translation tools are easy to use and allow you to translate text without having to leave the site. </p>
+                    </div>
+                </div>
+                <div class="actions">
+                    <div class="ui inverted cancel button">No Thanks</div>
+                    <a href="https://github.com/Semantic-Org/Semantic-UI/wiki/Translating-Semantic-UI-Docs" target="_blank" class="ui inverted approve teal button"><i class="mail icon"></i> Help Translate </a>
+                </div>
+            </div>
+        </div>
+    </body>
+    <loom-container id="lo-engage-ext-container">
+        <div></div>
+        <loom-shadow classname="resolved"></loom-shadow>
+    </loom-container>
+
+</html>

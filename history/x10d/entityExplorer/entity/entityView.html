@@ -1,0 +1,49 @@
+
+<div>
+<input type="text" style="width:65%" ng-model="title"/>
+<div style="float:right"><button ng-click="deleteThis()">-</button></div>
+<div><textarea style="width:100%;height:5em" ng-model="description"></textarea></div>
+<div>
+	<div>Created on {{generalInfo.createdOn}} by {{generalInfo.createdBy}}</div>
+	<div>Last updated on {{generalInfo.lastUpdatedOn}} by {{generalInfo.lastUpdatedBy}}</div>
+</div>
+
+<div ng-show="typesSection">
+	<hr/>
+	<div style="float:right"><button ng-click="addToThis()">+</button></div>
+	<div>Types</div>
+	<div ng-repeat="type in types">
+		<span>{{type.name}}</span>
+		<span><button ng-click="deleteThis()">-</button></span>
+	</div>
+</div>
+
+<div ng-show="subtypesSection">
+	<hr/>
+	<div style="float:right"><button ng-click="addToThis()">+</button></div>
+	<div>SubTypes</div>
+	<div ng-repeat="subType in subTypes">
+		<span>{{subType.name}}</span>
+		<span><button ng-click="deleteThis()">-</button></span>
+	</div>
+</div>
+<div ng-show="componentsSection">
+	<hr/>
+	<div style="float:right"><button ng-click="addToThis()">+</button></div>
+	<div>Components</div>
+	<div ng-repeat="component in components">
+		<span>{{component.name}}</span>
+		<span ng-show="component.deletable"><button ng-click="deleteThis()">-</button></span>
+		<span><button ng-click="updateThis()">Update</button></span>
+	</div>
+</div>
+<div ng-show="relationsSection">
+	<hr/>
+	<div style="float:right"><button ng-click="addToThis()">+</button></div>
+	<div>Relations</div>
+	<div ng-repeat="relation in relations">
+		<span>{{relation.name}}</span>
+		<span ng-show="relation.deletable"><button ng-click="deleteThis()">-</button></span>
+	</div>
+</div>
+</div>
