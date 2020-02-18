@@ -24,13 +24,28 @@
 
     <body id="example" class="index pushable js-focus-visible dimmable" ontouchstart="">
 
-        <div class="ui vertical inverted sidebar menu left" id="toc" style="">
-            <div class="item">
-                <a class="ui logo icon image" href="https://www.semantictypes.com/">
-                    <img class="semantic-types-logo" src="images/logo.979147b2.svg">
-                </a>
-                <a><b>Docs</b></a>
-            </div>
+        <div class="ui vertical inverted sidebar menu left inverted" id="toc" style="">
+
+            
+            
+                    <div class="ui container" style="margin:0!important">
+                        <div class="ui large secondary network menu inverted">
+
+                            <div class="item">
+                            <a><b style="font-size:1.6em">Docs</b></a>
+                                
+                            </div>
+                            <div class="right menu inverted">
+                                <div class="item">
+                            		<div class="active ui side" style="width:8em;right:-6em;position:relative!important">
+                                    	<img class="semantic-types-logo" src="images/logo.979147b2.svg">
+                                    	<a class="item" style="color:#567;left:-4em;position:relative;font-size:1.2em" href="https://www.semantictypes.com/app/"> App </a>
+                            		</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
             <a class="item" href="notes.html">
                 <b>Getting Started</b>
             </a>
@@ -58,17 +73,13 @@
             <div class="item">
                 <div class=" header">Traits (Behaviors)</div>
                 <div class="menu">
-                    <a class="item" href="">Has Behaviors </a>
-                    <a class="item" href="">Is Identifiable </a>
-					<a class="item" href="">Is Actionable </a>
-					<a class="item" href="">Is Alias </a>
-					<a class="item" href="">Has Alias </a>
-					<a class="item" href="">Has Tags </a>
+                    <a class="item" href="">Has Traits <superscipt>*</superscipt> </a>
+                    <a class="item" href="">Identifiable </a>
+					<a class="item" href="">Actionable </a>
+					<a class="item" href="">Serializable </a>
+					<a class="item" href="">Logs </a>
 					<a class="item" href="">Persistence </a>
-					<a class="item" href="">Is Serializable </a>
-					<a class="item" href="">Has Logs </a>
 					<a class="item" href="">Can Search </a>
-					<a class="item" href="">Has Facets </a>
                 </div>
             </div>
             <div class="item">
@@ -79,6 +90,8 @@
                     <a class="item" href="">part-of</a>
                     <a class="item" href="">member-of</a>
 					<a class="item" href="">instance-of</a>
+					<a class="item" href="">tagged-as</a>
+					<a class="item" href="">knows-as (alias) </a>
                 </div>
             </div>
             <div class="item">
@@ -86,6 +99,7 @@
                 <div class="menu">
                     <a class="item" href="">Has Actions (templated)</a>
 					<a class="item" href="">Has Interfaces </a>
+					<a class="item" href="">Has Facets </a>
                 </div>
             </div>
             <div class="item">
@@ -120,22 +134,17 @@
         <div class="pusher">
             <div class="full height">
                 <div class="following bar">
-                    <div class="ui container">
+                    <div class="ui container" style="margin:0!important">
                         <div class="ui large secondary network menu inverted">
                             <div class="item">
-                                <div class="ui logo shape">
-                                    <div class="sides">
-                                        <div class="active ui side">
-                                            <img class="semantic-types-logo" src="images/logo.979147b2.svg">
-                                        </div>
-                                    </div>
-                                </div>
+                                <a class="view-ui item"><i class="sidebar icon"></i> Menu </a>
                             </div>
-                            <a class="view-ui item"><i class="sidebar icon"></i> Menu </a>
-                            <a class="item" style="color:#567" href="https://www.semantictypes.com/app/"><i class="th icon"></i> App </a>
                             <div class="right menu inverted">
                                 <div class="item">
-                            
+                            		<div class="active ui side" style="width:7em;">
+                                    	<img class="semantic-types-logo" src="images/logo.979147b2.svg">
+                                    	<a class="item" style="color:#567;left:-3.6em;position:relative;" href="https://www.semantictypes.com/app/"> App </a>
+                            		</div>
                                 </div>
                                 <div class="ui language floating dropdown link item" id="languages" style="display:none">
                                     <i class="world icon"></i>
